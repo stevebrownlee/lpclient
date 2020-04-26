@@ -1,0 +1,22 @@
+.profile {
+    margin: 0 auto;
+    width: 25rem;
+    text-align: center;
+}
+
+.profile__github {
+    padding: 0.3rem;
+}
+
+.profile__github--avatar {
+    border-radius: 50%;
+    max-width: 10rem;
+}
+
+.profile__github--username {
+    font-size: larger;
+}
+
+.profile__github--email {
+    font-size: smaller;
+}

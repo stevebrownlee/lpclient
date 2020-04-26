@@ -7,7 +7,12 @@ const authConfig = {
 
 let auth0 = null
 
+export const userAuthenticated = () => {
+    return localStorage.getItem("platform_profile")
+}
+
 export const checkRedirect = () => {
+    console.log("checkRedirect")
     // NEW - check for the code and state parameters
     const query = window.location.search
     if (query.includes("code=") && query.includes("state=")) {
@@ -23,6 +28,7 @@ export const checkRedirect = () => {
 }
 
 export const configure = async () => {
+    console.log("configure")
     auth0 = await createAuth0Client({
         domain: authConfig.domain,
         client_id: authConfig.clientId
@@ -48,6 +54,10 @@ export const checkAuthState = async () => {
         )
     }
 }
+
+eventHub.addEventListener("githubAuthInitiated", e => {
+    login()
+})
 
 export const login = async () => {
     await auth0.loginWithRedirect({

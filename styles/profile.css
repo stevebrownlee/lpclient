@@ -20,3 +20,18 @@
 .profile__github--email {
     font-size: smaller;
 }
+
+.btn--logout {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.btn--link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+  }

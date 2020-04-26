@@ -59,13 +59,18 @@ eventHub.addEventListener("githubAuthInitiated", e => {
     login()
 })
 
-export const login = async () => {
+const login = async () => {
     await auth0.loginWithRedirect({
         redirect_uri: window.location.origin
     })
 }
 
+eventHub.addEventListener("logoutInitiated", e => {
+    logout()
+})
+
 const logout = () => {
+    localStorage.removeItem("platform_profile")
     auth0.logout({
         returnTo: window.location.origin
     })

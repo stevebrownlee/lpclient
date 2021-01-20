@@ -47,16 +47,15 @@ fieldset {
 
 .form--login {
     font-size: 1.25rem;
-    background-position-x: right;
-    background-image: url(logo.png);
     z-index: 1;
     min-height: 25rem;
     min-width: 35rem;
+    background-position-x: right;
+    background-image: url('../images/logo.png');
     background-color: hsla(0,0%,100%,0.40);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-
 }

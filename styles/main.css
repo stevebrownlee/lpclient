@@ -20,6 +20,12 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-.hidden {
-    display: none;
+.container {
+    background-position-x: left;
+    background-size: 5rem;
+    background-image: url('../images/logo.png');
+    background-color: hsla(0,0%,100%,0.40);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+
 }

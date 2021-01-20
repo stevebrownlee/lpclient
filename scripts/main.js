@@ -1,7 +1,6 @@
 import { checkAuthState, configure, checkRedirect } from "./auth/init.js"
 import { LearningPlatform } from "./components/LearningPlatform.js"
 import "./components/dom.js"
-import { eventHub } from "./components/dom.js"
 
 
 window.onload = async () => {

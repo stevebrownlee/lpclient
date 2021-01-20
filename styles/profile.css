@@ -34,4 +34,8 @@
     color: #069;
     text-decoration: underline;
     cursor: pointer;
-  }
+}
+
+.btn--link:hover {
+    color: rgb(26, 157, 223);
+}
